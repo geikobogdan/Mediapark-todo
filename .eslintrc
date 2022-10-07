@@ -1,0 +1,81 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "extends": ["airbnb", "airbnb/hooks", "prettier", "plugin:@next/next/recommended"],
+  "plugins": ["prettier", "unused-imports"],
+  "rules": {
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        // "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "all",
+        "singleQuote": true,
+        "bracketSpacing": false,
+        "bracketSameLine": true,
+        "arrowParens": "avoid",
+        "printWidth": 120
+      }
+    ],
+    "react/no-unknown-property": ["error", {"ignore": ["download"]}],
+    "react/no-array-index-key": "off",
+    "indent": "off",
+    "quotes": "off",
+    "no-var": ["error"],
+    "import/no-unresolved": "off",
+    "no-underscore-dangle": "off",
+    "semi": "off",
+    "no-trailing-spaces": ["error"],
+    "eol-last": ["error"],
+    "yoda": ["off"],
+    "no-param-reassign": ["off"],
+    "no-nested-ternary": ["off"],
+    "no-irregular-whitespace": "off",
+    "new-cap": "off",
+    "no-shadow": "off",
+    "radix": "off",
+    "no-unsafe-optional-chaining": "off",
+    "import/prefer-default-export": "off",
+    "import/no-cycle": "warn",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-danger": "off",
+    "react/jsx-no-target-blank": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "class-methods-use-this": "off",
+    "import/no-extraneous-dependencies": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "react/prop-types": "off",
+    "no-unused-expressions": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "no-plusplus": "off",
+    "no-return-assign": "off",
+    "consistent-return": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "@next/next/no-img-element": "off",
+    "no-extra-boolean-cast": "off"
+  },
+  "env": {
+    "jest": true
+  },
+  "globals": {
+    "window": "readonly",
+    "document": "readonly",
+    "navigator": "readonly",
+    "dataLayer": "readonly"
+  }
+}
